@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(290.71deg, #12bd0ce2 -77.16%, #8bdbfd 100%);
+    padding: 0 50px;
+    gap: 30px;
+}
+
+#copy-alert {
+    background: rgb(82, 169, 241);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.373);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 150px;
+    position: absolute;
+    top: 20px;
+    top: -100px;
+    transition: .5s;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 5fr 5fr;
+}
+
+.textarea-block {
+    height: 80vh;
+    position: relative;
+}
+
+.textarea-block button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.textarea-block button:hover {
+    background-color: #89d287;
+    transition: .2s;
+}
+
+textarea {
+    border-radius: 10px;
+    font-size: 16px;
+    height: 100%;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track-piece {
+    background: #ccc;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}​
